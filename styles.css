@@ -58,7 +58,7 @@ p {
 }
 
 .main-content-background {
-  background-image: url("../img/background-main-2.jpg");
+  background-image: url("./img/background-main-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
