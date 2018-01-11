@@ -23,7 +23,11 @@ body, html {
   background-attachment: initial;
 }
   @media (min-width: 768px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
     background-attachment: fixed;
+    }
 }
 
 
