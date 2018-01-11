@@ -1,0 +1,179 @@
+//-------------------------------//
+// Var and Mixins
+//-------------------------------//
+
+@mixin marg-center {
+  margin: 0 auto;
+}
+@mixin font-h2 {
+  font-family: 'Roboto Slab', serif;
+}
+@mixin font-h1 {
+  font-family: 'Roboto', serif;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+$color-main: #333;
+$color-sec: #b3b2b2;
+$color-text: #fff;
+
+//-------------------------------//
+// Base sytles
+//-------------------------------//
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+h1 {
+  @include font-h1;
+}
+
+h2,
+h3,
+p {
+  @include font-h2;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: $color-text;
+}
+
+//------------------------------------HEADER
+
+.main-header {
+  background-color: #333;
+  padding-bottom: 10px;
+  margin-bottom: 45px;
+  @media (min-width: 700px) {
+    @include flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  h1,
+  h2 {
+    margin: 0px auto 5px auto;
+    text-align: center;
+    font-size: 2rem;
+  }
+  h2 {
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+}
+
+// -----------------------------Sticky Footer
+
+.content {
+  flex: 1;
+}
+
+.main-footer {
+  padding: .5rem;
+  background-color: $color-main;
+  text-align: center;
+  z-index: 2;
+}
+//-------------------------------//
+// Main-Content
+//-------------------------------//
+
+//Background img
+
+.main-content-background {
+  background-image: url('../img/background-main-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+//--------------------- Pic of me :)
+
+.main-picture-cont{
+  position: relative;
+}
+.main-picture {
+  display: block;
+  max-width: 171px;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left: -89px;
+  @media (min-width: 700px) {
+    display: block;
+    margin-top: 48px;
+    margin-left: -82px;
+  }
+  @media (min-width: 890px) {
+    max-width: 195px;
+    margin-top: 36px;
+    margin-left: -100px;
+  }
+  @media (min-width: 990px) {
+    max-width: 208px;
+    margin-top: 28px;
+    margin-left: -108px;
+  }
+}
+
+// --------------------------------"Nav"
+
+// Container Div
+.main-content {
+  @include flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 170px;
+  @media (min-width: 700px) {
+    flex-direction: row;
+    margin-top: 233px;
+  }
+  @media (min-width: 960px) {
+    margin: 233px auto;
+  }
+  @media (min-width: 1050px) {
+    margin: 233px auto 0px;
+    max-width: 1032px;
+  }
+  h2 {
+    color: $color-text;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 8px;
+  }
+  // The actual Items
+  .content-seg-top,
+  .content-seg-bottom {
+    display: block;
+    background: rgba(179, 178, 178, .9);
+    margin: 23px auto;
+    padding: 10px;
+    width: 90%;
+
+    p {
+      display: none;
+    }
+    cursor: pointer;
+    @media (min-width: 700px) {
+      max-width: 40%;
+      max-height: 107px;
+      margin: 10px auto;
+    }
+  }
+}
