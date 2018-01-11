@@ -20,7 +20,10 @@ body, html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
+}
+  @media (min-width: 768px) {
+    background-attachment: fixed;
 }
 
 
