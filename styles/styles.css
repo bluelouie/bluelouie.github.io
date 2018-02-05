@@ -38,8 +38,7 @@ Parallax styles
   position: relative;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: initial; }
+  background-repeat: no-repeat; }
   @media (min-width: 768px) {
     .pimg1,
     .pimg2,
@@ -125,7 +124,7 @@ Skills Section Styles
 .skills-section {
   width: 90%;
   margin: 0px auto;
-  background-color: black;
+  background-color: #111;
   box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.5);
   border-radius: 20px; }
 
