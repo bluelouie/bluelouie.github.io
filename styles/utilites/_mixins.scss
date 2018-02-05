@@ -1,0 +1,55 @@
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Center elements
+
+@mixin centered($width: 100%, $dis: block) {
+  width: $width;
+	display: $dis;
+	margin-left: auto;
+	margin-right: auto;
+  @content;
+}
+
+
+
+@mixin flex($flex-wrap: wrap, $flex-dir: row) {
+  display: flex;
+  flex-wrap: $flex-wrap;
+  flex-direction: $flex-dir;
+  @content;
+}
+
+@mixin break--one() {
+  @media (min-width: $bp) {
+    @content
+  }
+}
+
+
+// BEM selectors
+
+@mixin e($element) {
+	&__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+//Em convertor
+
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+  
+}
