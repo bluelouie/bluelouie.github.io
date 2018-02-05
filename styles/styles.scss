@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -56,10 +56,11 @@ Parallax styles
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: initial;
-}
   @media (min-width: 768px) {
     background-attachment: fixed;
 }
+}
+
 
 
 .pimg1{
