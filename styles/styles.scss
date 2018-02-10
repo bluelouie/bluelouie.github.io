@@ -5,15 +5,26 @@
 h1,
 h2,
 h3,
-h4,
-span {
+h4, {
   font-family: 'Lobster', cursive;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow:  #ccc 0 1px 0,
+                #c9c9c9 0 2px 0,
+                #bbb 0 3px 0, #b9b9b9 0 4px 0,
+                #aaa 0 5px 0,rgba(0,0,0,.1) 0 6px 1px,
+                rgba(0,0,0,.1) 0 0 5px,
+                rgba(0,0,0,.3) 0 1px 3px,
+                rgba(0,0,0,.15) 0 3px 5px,
+                rgba(0,0,0,.2) 0 5px 10px,
+                rgba(0,0,0,.2) 0 10px 10px,
+                rgba(0,0,0,.1) 0 20px 20px;
 }
+
 
 body, html {
   height: 100%;
   margin: 0;
-  font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.8em;
@@ -22,26 +33,33 @@ body, html {
 
 html {
   font-size: 1rem;
-}
-
-
-@media (min-width: 575.98px) {
-  html {
-    font-size: 1.2rem;
+  @media (min-width: 575.98px) {
+      font-size: 1.2rem;
   }
-}
-
-@media (min-width: 767.98px) {
-  html {
+  @media (min-width: 767.98px) {
     font-size: 1.4rem;
   }
 }
 
-@media (min-width: 991.98px) {
-  html {
-    font-size: 1.6rem;
+p {
+  font-size: 1.2rem;
+  &::first-letter {
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+  }
+  @media (min-width: 575.98px) {
+  }
+  @media (min-width: 767.98px) {
+  }
+  @media (min-width: 991.98px) {
   }
 }
+
+hr {
+  border-top: 1px solid #fff;
+}
+
+
 
 /* --------------------------------------------------------------
 Parallax styles
@@ -129,8 +147,12 @@ button:focus {
 /* --------------------------------------------------------------
 General Section Styles
 -------------------------------------------------------------- */
-.header h2 {
-  font-size: 2.5rem;
+.title {
+  font-size: 2.8em;
+}
+
+.section--title {
+  font-size: 2.5em;
 }
 
 .section {
@@ -153,7 +175,6 @@ Skills Section Styles
 -------------------------------------------------------------- */
 
 .skills-section__container {
-  height: 100%;
   padding: 40px 15px;
 }
 
@@ -161,24 +182,50 @@ Skills Section Styles
   width: 90%;
   margin: 0px auto;
   background-color: #111;
-  box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, .5);
-  border-radius: 20px;
+
 }
 
 
-.image-group {
+.web--images {
+  padding: 15px;
   width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 20px;
+  & img {
+    width: 85px;
+    align-self: center;
+    margin: 5px 10px 10px;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,.5));
+  }
 }
 
-.image-group img {
-  width: 120px;
-  align-self: center;
-  margin: 0 auto;
+.design--images {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  & img {
+    width: 250px;
+    align-self: center;
+  }
 }
+/* --------------------------------------------------------------
+Past Projects Section Styles
+-------------------------------------------------------------- */
+
+.carousel-item img {
+}
+
+.carousel-caption {
+  position: static;
+  padding-bottom: 50px;
+}
+
 
 /* --------------------------------------------------------------
 About Me Section Styles
