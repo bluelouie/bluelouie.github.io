@@ -49,7 +49,8 @@ Parallax styles
   position: relative;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: scroll; }
   @media (min-width: 768px) {
     .pimg1,
     .pimg2,
@@ -173,6 +174,9 @@ Past Projects Section Styles
   position: static;
   padding: 0px;
   padding-top: 10px; }
+  @media (min-width: 576px) {
+    .carousel-caption p {
+      font-size: .8rem; } }
 
 /* --------------------------------------------------------------
 About Me Section Styles
@@ -192,6 +196,10 @@ About Me Section Styles
   margin: 0 auto;
   background-color: white;
   border-radius: 10px; }
+
+@media (min-width: 576px) {
+  .about-me__info p {
+    font-size: .8rem; } }
 
 .about-me-picture {
   width: 70%;

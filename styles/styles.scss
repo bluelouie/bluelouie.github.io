@@ -10,15 +10,15 @@ h4, {
   font-size: 1.7em;
   color: #fff;
   text-shadow:  #ccc 0 1px 0,
-                #c9c9c9 0 2px 0,
-                #bbb 0 3px 0, #b9b9b9 0 4px 0,
-                #aaa 0 5px 0,rgba(0,0,0,.1) 0 6px 1px,
-                rgba(0,0,0,.1) 0 0 5px,
-                rgba(0,0,0,.3) 0 1px 3px,
-                rgba(0,0,0,.15) 0 3px 5px,
-                rgba(0,0,0,.2) 0 5px 10px,
-                rgba(0,0,0,.2) 0 10px 10px,
-                rgba(0,0,0,.1) 0 20px 20px;
+  #c9c9c9 0 2px 0,
+  #bbb 0 3px 0, #b9b9b9 0 4px 0,
+  #aaa 0 5px 0,rgba(0,0,0,.1) 0 6px 1px,
+  rgba(0,0,0,.1) 0 0 5px,
+  rgba(0,0,0,.3) 0 1px 3px,
+  rgba(0,0,0,.15) 0 3px 5px,
+  rgba(0,0,0,.2) 0 5px 10px,
+  rgba(0,0,0,.2) 0 10px 10px,
+  rgba(0,0,0,.1) 0 20px 20px;
 }
 
 
@@ -34,7 +34,7 @@ body, html {
 html {
   font-size: 1rem;
   @media (min-width: 575.98px) {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
   @media (min-width: 767.98px) {
     font-size: 1.4rem;
@@ -72,6 +72,7 @@ Parallax styles
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   @media (min-width: 768px) {
     background-attachment: fixed;
   }
@@ -224,7 +225,13 @@ Past Projects Section Styles
   position: static;
   padding: 0px;
   padding-top: 10px;
+  & p {
+    @media (min-width: 576px) {
+      font-size: .8rem;
+    }
+  }
 }
+
 
 
 /* --------------------------------------------------------------
@@ -233,11 +240,11 @@ About Me Section Styles
 
 .about-me__container {
   position: absolute;
-top: 12%;
-left: 2.5%;
-text-align: center;
-color: black;
-margin: 0 auto;
+  top: 12%;
+  left: 2.5%;
+  text-align: center;
+  color: black;
+  margin: 0 auto;
 }
 
 .about-me {
@@ -247,6 +254,14 @@ margin: 0 auto;
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
+}
+
+.about-me__info {
+  & p {
+    @media (min-width: 576px) {
+      font-size: .8rem;
+    }
+  }
 }
 
 .about-me-picture {
