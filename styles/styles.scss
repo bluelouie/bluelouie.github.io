@@ -47,16 +47,14 @@ p {
     font-size: 2em;
     font-family: 'Lobster', cursive;
   }
-  @media (min-width: 575.98px) {
-  }
-  @media (min-width: 767.98px) {
-  }
-  @media (min-width: 991.98px) {
-  }
 }
 
 hr {
   border-top: 1px solid #fff;
+}
+
+svg {
+  width: 20%;
 }
 
 
@@ -68,7 +66,8 @@ Parallax styles
 
 .pimg1,
 .pimg2,
-.pimg3 {
+.pimg3,
+.pimg4 {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -98,9 +97,15 @@ Parallax styles
   filter: grayscale(100%);
 }
 
+.pimg4{
+  background-image: url('../images/img4.jpeg');
+  min-height: 400px;
+  filter: grayscale(100%);
+}
+
 .pText {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 2.5%;
   width: 95%;
   text-align: center;
@@ -126,22 +131,9 @@ Custom Nav Settings
 button:focus {
   outline: 5px auto white;
 }
-
-.navbar {
-  width: 95%;
-  border-radius: 5px;
-  box-shadow: 0px 5px 20px 0px rgb(255, 255, 255);
-}
-
 .navbar-brand {
   font-family: "Lobster", cursive;
 }
-
-.fixed-top {
-  top: 10px;
-  left: 2.5%;
-}
-
 
 
 /* --------------------------------------------------------------
@@ -161,8 +153,11 @@ General Section Styles
 }
 
 .section-light {
-  background-color: white;
-  color: #666;
+  background-color: #ddd;
+  color: #111;
+  & hr {
+    border-top: 1px solid #111;
+  }
 }
 
 .section-dark {
@@ -218,12 +213,17 @@ Skills Section Styles
 Past Projects Section Styles
 -------------------------------------------------------------- */
 
+.carousel-indicators {
+  bottom: -45px;
+}
+
 .carousel-item img {
 }
 
 .carousel-caption {
   position: static;
-  padding-bottom: 50px;
+  padding: 0px;
+  padding-top: 10px;
 }
 
 
@@ -235,7 +235,6 @@ About Me Section Styles
   position: absolute;
 top: 12%;
 left: 2.5%;
-width: 95%;
 text-align: center;
 color: black;
 margin: 0 auto;
