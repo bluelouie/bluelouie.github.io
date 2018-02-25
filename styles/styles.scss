@@ -1,3 +1,29 @@
+
+//==========================================================================
+//===========================Variables
+//==========================================================================
+
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+
+// Colors
+$color-main     : #fff;
+$color-second   : #034fff;
+$color-grey    : #ccc6c6;
+$color-dark     : #000;
+
+
+
+
+//==========================================================================
+//===========================Base Styles
+//==========================================================================
+
 * {
   box-sizing: border-box;
 }
@@ -7,9 +33,8 @@ h2,
 h3,
 h4, {
   font-family: 'Lobster', cursive;
-  font-size: 1.7em;
-  color: #fff;
-  text-shadow:  #ccc 0 1px 0,
+  color: $color-dark;
+  /* text-shadow:  #ccc 0 1px 0,
   #c9c9c9 0 2px 0,
   #bbb 0 3px 0, #b9b9b9 0 4px 0,
   #aaa 0 5px 0,rgba(0,0,0,.1) 0 6px 1px,
@@ -18,7 +43,7 @@ h4, {
   rgba(0,0,0,.15) 0 3px 5px,
   rgba(0,0,0,.2) 0 5px 10px,
   rgba(0,0,0,.2) 0 10px 10px,
-  rgba(0,0,0,.1) 0 20px 20px;
+  rgba(0,0,0,.1) 0 20px 20px; */
 }
 
 
@@ -28,7 +53,9 @@ body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.8em;
-  color: #666;
+  color: $color-dark;
+  background-color: $color-main;
+  text-align: center;
 }
 
 html {
@@ -41,184 +68,57 @@ html {
   }
 }
 
-p {
-  font-size: 1.2rem;
-  &::first-letter {
-    font-size: 2em;
-    font-family: 'Lobster', cursive;
-  }
-}
+
 
 hr {
-  border-top: 1px solid #fff;
-}
-
-svg {
-  width: 20%;
+  border-top: 1px solid $color-dark;
 }
 
 
+//==========================================================================
+//===========================Jumbotron Styles
+//==========================================================================
 
-/* --------------------------------------------------------------
-Parallax styles
--------------------------------------------------------------- */
+.navbar {
+  background-color: transparent !important;
+}
+
+.nav-item {
+  /* color: #0B5CDD !important; */
+}
 
 
-.pimg1,
-.pimg2,
-.pimg3,
-.pimg4 {
-  position: relative;
-  background-position: center;
+.banner-image {
+  background-image: url("../images/img4.png");
+  margin-top: -70px;
+  padding-top: 250px;
+  text-align: center;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  @media (min-width: 768px) {
-    background-attachment: fixed;
-  }
+  background-color: $color-grey;
 }
 
 
-
-.pimg1{
-  background-image: url('../images/img1.jpg');
-  min-height: 100%;
-  filter: grayscale(100%);
+//==========================================================================
+//===========================carousel Styles
+//==========================================================================
+.carousel {
+  background-color: $color-grey;
+padding: 10px;
+border-radius: 10px;
 }
-
-.pimg2{
-  background-image: url('../images/img2.jpg');
-  min-height: 400px;
-  filter: grayscale(100%);
-}
-
-.pimg3{
-  background-image: url('../images/img3.jpeg');
-  min-height: 400px;
-  filter: grayscale(100%);
-}
-
-.pimg4{
-  background-image: url('../images/img4.jpeg');
-  min-height: 400px;
-  filter: grayscale(100%);
-}
-
-.pText {
-  position: absolute;
-  top: 20%;
-  left: 2.5%;
-  width: 95%;
-  text-align: center;
-  color: black;
-  margin: 0 auto;
-}
-
-.pText .border {
-  background-color: #111;
-  color: white;
-  padding: 20px;
-}
-
-/* --------------------------------------------------------------
-Custom Nav Settings
--------------------------------------------------------------- */
-
-.navbar-dark,
-.navbar-toggler {
-  border-color: rgba(255,255,255,.0) !important;
-}
-
-button:focus {
-  outline: 5px auto white;
-}
-.navbar-brand {
-  font-family: "Lobster", cursive;
-}
-
-
-/* --------------------------------------------------------------
-General Section Styles
--------------------------------------------------------------- */
-.title {
-  font-size: 2.8em;
-}
-
-.section--title {
-  font-size: 2.5em;
-}
-
-.section {
-  text-align: center;
-  padding: 50px 18px;
-}
-
-.section-light {
-  background-color: #ddd;
-  color: #111;
-  & hr {
-    border-top: 1px solid #111;
-  }
-}
-
-.section-dark {
-  background-color: #111;
-  color: #ddd
-}
-
-/* --------------------------------------------------------------
-Skills Section Styles
--------------------------------------------------------------- */
-
-.skills-section__container {
-  padding: 40px 15px;
-}
-
-.skills-section {
-  width: 90%;
-  margin: 0px auto;
-  background-color: #111;
-
-}
-
-
-.web--images {
-  padding: 15px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  & img {
-    width: 85px;
-    align-self: center;
-    margin: 5px 10px 10px;
-    filter: drop-shadow(0px 0px 10px rgba(255,255,255,.5));
-  }
-}
-
-.design--images {
-  padding: 15px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  & img {
-    width: 250px;
-    align-self: center;
-  }
-}
-/* --------------------------------------------------------------
-Past Projects Section Styles
--------------------------------------------------------------- */
 
 .carousel-indicators {
   bottom: -45px;
-}
-
-.carousel-item img {
 }
 
 .carousel-caption {
@@ -232,51 +132,38 @@ Past Projects Section Styles
   }
 }
 
-
-
-/* --------------------------------------------------------------
-About Me Section Styles
--------------------------------------------------------------- */
-
-.about-me__container {
-  position: absolute;
-  top: 12%;
-  left: 2.5%;
-  text-align: center;
-  color: black;
-  margin: 0 auto;
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
 }
 
-.about-me {
-  padding: 20px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 10px;
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
 }
 
-.about-me__info {
-  & p {
-    @media (min-width: 576px) {
-      font-size: .8rem;
-    }
-  }
+#social i:hover {
+	color: #1abc9c
 }
 
-.about-me-picture {
-  width: 70%;
-  border-radius: 50%;
-  filter: grayscale(100%);
-  box-shadow: 8px 6px 18px 0px rgba(0,0,0,0.15);
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #2f2f2f;
 }
 
-
-
-.border {
-  border: 5px solid #dee2e6!important;
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
 }
 
-.bg-dark {
-  background-color: #111 !important;
+/* Gallery */
+.gallery {
+  margin-top: 30px;
+  background-color: $color-grey;
+}
+
+.gallery img:hover {
+  opacity: 0.4;
 }
