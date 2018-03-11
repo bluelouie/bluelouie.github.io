@@ -104,7 +104,9 @@ hr {
 /* Gallery */
 .gallery {
   margin-top: 30px;
-  background-color: #ccc6c6; }
+  background-color: #ccc6c6;
+  padding: 5px;
+  border-radius: 10px; }
 
 .gallery img:hover {
   opacity: 0.4; }

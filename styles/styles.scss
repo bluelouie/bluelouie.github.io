@@ -161,7 +161,9 @@ border-radius: 10px;
 /* Gallery */
 .gallery {
   margin-top: 30px;
-  background-color: $color-grey;
+  background-color: #ccc6c6;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .gallery img:hover {
