@@ -3,8 +3,8 @@
     "title": "Remote Sync"
   },
   "transport": "ftp",
-  "uploadOnSave": true,
-  "useAtomicWrites": true,
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
   "deleteLocal": false,
   "hostname": "MainPC",
   "target": "Portfolio",

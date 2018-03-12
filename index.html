@@ -1,106 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lobster%7CRoboto" rel="stylesheet">
+  
+  <link rel="stylesheet" href="javascript/aos/aos.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="/images/Logo.png">
   <title>Jose Luis Medina</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Jose Luis Medina</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="pimg1">
-    <div class="pText">
-      <header class="header border">
-        <h1 class="title">Front-end Developer & Web Designer</h1>
-        <hr>
-        <p>Producing high quality responsive websites and striving for the best user experience, wherever possible.</p>
-      </header>
-    </div>
-  </div>
-  <div class="skills-section__container section section-dark clearfix">
-    <div class="skills-section clearfix">
-      <p>A Front-End Developer with experience with Web 2.0 technologies. I strive to deliver excellent, timely, and responsive results with a positive attitude!</p>
-      <hr>
-    </div>
-  </div>
 
-  <div class="pimg2">
-    <div class="pText">
-      <div class="border">
-        <h2 class="section--title" id="skills">Skills</h2>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="images/Logo.svg" width="60" height="60" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-item nav-link" href="#past-projects">Past Projects</a>
+          <a class="nav-item nav-link" href="#about-me">About Me</a>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid banner-image jarallax">
+      <div class="container">
+        <h1 class="display-4">Jose Luis Medina</h1>
+        <h3>Front-End Dev and Web Designer</h3>
       </div>
     </div>
-  </div>
-  <div class="section section-dark d-md-flex justify-content-center align-items-center">
-    <h3>Web</h3>
-    <div class="web--images clearfix">
-      <img  src="./images/HTML.png" alt="HTML">
-      <img  src="./images/CSS.png" alt="CSS">
-      <img  src="./images/JS.png" alt="Javascript">
-      <img  src="./images/jquery.png" alt="Jquery">
-      <img  src="./images/sass.png" alt="Sass">
-      <img  src="./images/bootstrap-stack.png" alt="Bootstrap">
-      <img  src="./images/react-js.png" alt="react-js">
-      <img  src="./images/Web_Dev.png" alt="Web Dev">
-    </div>
-    <h3>Design</h3>
-    <div class="design--images clearfix">
-      <img  src="./images/Adobe.png" alt="Web Dev">
-    </div>
-  </div>
+  </header>
+  <section id="past-projects">
+    <h3>Past Projects</h3>
 
-  <div class="pimg3">
-    <div class="pText">
-      <div class="border">
-        <h2 class="section--title" id="projects">Projects</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="section section-dark">
-    <h3>Treehouse Techdegree</h3>
-    <hr>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide d-md-none" data-ride="carousel">
       <div class="carousel-inner">
 
 
         <div class="carousel-item ">
           <div class="row align-items-center">
-            <div class="col-sm-8">
+            <div class="col-md-8">
               <img class="img-fluid" src="./images/ChopSticksEX.png" alt="First slide">
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <div class="carousel-caption">
                 <h4>ChopSticks</h4>
                 <p>A Webpage I created for fun of my favorite restaurant!</p>
                 <h4>Technologies</h4>
                 <p>HTML5, CSS3, Javascript, Jquery</p>
-                <a class="btn btn-primary" href="https://bluelouie.github.io/Chopsticks-Website/" role="button">Webpage</a>
-                <a class="btn btn-dark" href="https://github.com/bluelouie/Chopsticks-Website" role="button">Github</a>
+                <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Chopsticks-Website/" role="button">Webpage</a>
+                <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Chopsticks-Website" role="button">Github</a>
               </div>
             </div>
           </div>
@@ -109,17 +71,17 @@
 
         <div class="carousel-item ">
           <div class="row align-items-center">
-            <div class="col-sm-8">
+            <div class="col-md-8">
               <img class="d-block w-100" src="./images/WebStyleGuideEX.png" alt="Second slide">
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <div class="carousel-caption">
                 <h4>Sass Web Style guide</h4>
                 <p>A Web Style guild, created entirely by Sass and BEM naming conventions.</p>
                 <h4>Technologies</h4>
                 <p>HTML5, CSS3, Sass, BEM</p>
-                <a class="btn btn-primary" href="https://bluelouie.github.io/Treehouse-Web-Style-Guide/" role="button">Webpage</a>
-                <a class="btn btn-dark" href="https://github.com/bluelouie/Treehouse-Web-Style-Guide" role="button">Github</a>
+                <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Treehouse-Web-Style-Guide/" role="button">Webpage</a>
+                <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Treehouse-Web-Style-Guide" role="button">Github</a>
               </div>
             </div>
           </div>
@@ -128,17 +90,17 @@
 
         <div class="carousel-item ">
           <div class="row align-items-center">
-            <div class="col-sm-8">
+            <div class="col-md-8">
               <img class="d-block w-100" src="./images/WebAppDashEX.png" alt="Third slide">
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <div class="carousel-caption">
                 <h4>Web App Dashboard</h4>
                 <p>App Dashboard with data visualization created with the Charts.js library.</p>
                 <h4>Technologies</h4>
                 <p>HTML5, CSS3, Sass, Javascript, Jquery, Charts.js</p>
-                <a class="btn btn-primary" href="https://bluelouie.github.io/Treehouse-Web-App-Dashboard/" role="button">Webpage</a>
-                <a class="btn btn-dark" href="https://github.com/bluelouie/Treehouse-Web-App-Dashboard" role="button">Github</a>
+                <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Treehouse-Web-App-Dashboard/" role="button">Webpage</a>
+                <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Treehouse-Web-App-Dashboard" role="button">Github</a>
               </div>
             </div>
           </div>
@@ -147,74 +109,178 @@
 
         <div class="carousel-item active">
           <div class="row align-items-center">
-          <div class="col-sm-8">
-            <img class="d-block w-100" src="./images/APIEX.png" alt="Fourth slide">
-          </div>
-          <div class="col-sm-4">
-            <div class="carousel-caption">
-              <h4>Employee Directory</h4>
-              <p>An employee directory populated with data from the public, third-party API, Random User Generator.</p>
-              <h4>Technologies</h4>
-              <p>HTML5, CSS3, Javascript, Jquery, AJAX, API</p>
-              <a class="btn btn-primary" href="https://bluelouie.github.io/Treehouse-Employee-Directory/" role="button">Webpage</a>
-              <a class="btn btn-dark" href="https://github.com/bluelouie/Treehouse-Employee-Directory" role="button">Github</a>
+            <div class="col-md-8">
+              <img class="d-block w-100" src="./images/APIEX.png" alt="Fourth slide">
+            </div>
+            <div class="col-md-4">
+              <div class="carousel-caption">
+                <h4>Employee Directory</h4>
+                <p>An employee directory populated with data from the public, third-party API, Random User Generator.</p>
+                <h4>Technologies</h4>
+                <p>HTML5, CSS3, Javascript, Jquery, AJAX, API</p>
+                <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Treehouse-Employee-Directory/" role="button">Webpage</a>
+                <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Treehouse-Employee-Directory" role="button">Github</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  </div>
-
-  <div class="pimg4">
-    <div class="pText">
-      <div class="border">
-        
-        <h2 class="section--title" id="about">About me</h2>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
+
+    <!-- MD break point -->
+    <div class="container-fluid d-none d-md-block mw-50 past-projects__MD">
+      <div class="row align-items-center" data-aos="fade-left">
+        <div class="col-md-6">
+          <img class="d-block w-100 drop-shadow" src="./images/WebAppDashEX.png" alt="Third slide">
+        </div>
+        <div class="col-md-6">
+          <h4>Web App Dashboard</h4>
+          <p>App Dashboard with data visualization created with the Charts.js library.</p>
+          <h4>Technologies</h4>
+          <p>HTML5, CSS3, Sass, Javascript, Jquery, Charts.js</p>
+          <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Treehouse-Web-App-Dashboard/" role="button">Webpage</a>
+          <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Treehouse-Web-App-Dashboard" role="button">Github</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center" data-aos="fade-right">
+        <div class="col-md-6">
+          <h4>Employee Directory</h4>
+          <p>An employee directory populated with data from the public, third-party API, Random User Generator.</p>
+          <h4>Technologies</h4>
+          <p>HTML5, CSS3, Javascript, Jquery, AJAX, API</p>
+          <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Treehouse-Employee-Directory/" role="button">Webpage</a>
+          <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Treehouse-Employee-Directory" role="button">Github</a>
+        </div>
+        <div class="col-md-6">
+          <img class="d-block w-100 drop-shadow" src="./images/APIEX.png" alt="Fourth slide">
+        </div>
+      </div>
+
+      <div class="row align-items-center" data-aos="fade-up">
+        <div class="col-md-6">
+          <img class="d-block w-100 drop-shadow" src="./images/WebStyleGuideEX.png" alt="Second slide">
+        </div>
+        <div class="col-md-6">
+          <h4>Sass Web Style guide</h4>
+          <p>A Web Style guild, created entirely by Sass and BEM naming conventions.</p>
+          <h4>Technologies</h4>
+          <p>HTML5, CSS3, Sass, BEM</p>
+          <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Treehouse-Web-Style-Guide/" role="button">Webpage</a>
+          <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Treehouse-Web-Style-Guide" role="button">Github</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center" data-aos="fade-down">
+        <div class="col-md-6">
+          <h4>ChopSticks</h4>
+          <p>A Webpage I created for fun of my favorite restaurant!</p>
+          <h4>Technologies</h4>
+          <p>HTML5, CSS3, Javascript, Jquery</p>
+          <a class="btn btn-primary" target="_blank" href="https://bluelouie.github.io/Chopsticks-Website/" role="button">Webpage</a>
+          <a class="btn btn-dark" target="_blank" href="https://github.com/bluelouie/Chopsticks-Website" role="button">Github</a>
+        </div>
+        <div class="col-md-6">
+          <img class="d-block w-100 drop-shadow" src="./images/ChopSticksEX.png" alt="First slide">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div id="social">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-2">
+          <a href="#">
+            <i class="fa fa-dribbble"></i>
+          </a>
+        </div>
+        <div class="col-lg-2">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+        <div class="col-lg-2">
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+        <div class="col-lg-2">
+          <a href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="col-lg-2">
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <div class="col-lg-2">
+          <a href="#">
+            <i class="fa fa-tumblr"></i>
+          </a>
+        </div>
+
+      </div>
+      <! --/row -->
+    </div>
+    <! --/container -->
   </div>
+  <! --/social -->
 
-  <div class="section section-light">
-    <div class="row align-items-center">
-    <div class="about-me-picture__section col-sm-6">
-      <img class="about-me-picture" src="./images/Jose-Medina.jpg" alt="Jose Medina">
-    </div>
-    <hr>
-    <div class="about-me-picture__section col-sm-6">
-      <img class="about-me-picture" src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/11269486" alt="Jose Medina">
-    </div>
-    <div class="about-me__info col-sm-6">
-      <p>After 6 years of being exposed to print design, I decided to go ahead and move on to Front-End design and programming. I love a great challenge! The sense of hitting that wall and climbing to the top little by little then finagling reaching the top is addicting. When I’m not coding, I go out with friends to try different foods (I’m a lover of Asian cuisine and Instant Ramen alike) and go out on adventures.
-      </p>
-      <p>Follow me on Facebook and view my Github!</p>
-      <a href="https://www.facebook.com/jose.l.medina.24">
-        <svg viewBox="0 0 1000 1000">
-          <path d="M990 500c0-270.6-219.4-490-490-490S10 229.4 10 500s219.4 490 490 490 490-219.4 490-490zm-621.6 0v-93.8h57.5v-56.7c0-76.5 22.9-131.6 106.6-131.6h99.6v93.5H562c-35.1 0-43.1 23.3-43.1 47.8v47H627L612.2 500h-93.3v282.8h-93V500h-57.5z"/>
-      </svg>
-    </a>
+  <section id="about-me" class="container-fluid">
+    <div class="container">
+      <div class="row align-items-center justify-content-around">
+        <div class="about-me-picture__section col-md-6" data-aos="zoom-in-up">
+          <img class="d-block w-100 about-me__img" src="./images/Jose-Medina.jpg" alt="Jose Medina">
+        </div>
+        <div class="about-me__info col-md-6">
+          <p>After 6 years of being exposed to print design, I decided to go ahead and move on to Front-End design and programming.
+            I love a great challenge! The sense of hitting that wall and climbing to the top little by little then finagling
+            reaching the top is addicting. When I’m not coding, I go out with friends to try different foods (I’m a lover
+            of Asian cuisine and Instant Ramen alike) and go out on adventures.
+          </p>
+          <p>Follow me on Facebook and view my Github!</p>
+          <a target="_blank" href="https://www.facebook.com/jose.l.medina.24">
+            <svg class="social" data-aos="flip-left" viewBox="0 0 1000 1000">
+              <path d="M990 500c0-270.6-219.4-490-490-490S10 229.4 10 500s219.4 490 490 490 490-219.4 490-490zm-621.6 0v-93.8h57.5v-56.7c0-76.5 22.9-131.6 106.6-131.6h99.6v93.5H562c-35.1 0-43.1 23.3-43.1 47.8v47H627L612.2 500h-93.3v282.8h-93V500h-57.5z"
+              />
+            </svg>
+          </a>
 
-      <a href="https://github.com/bluelouie">
-        <svg viewBox="0 0 512 512">
-          <path d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0zm152.027 408.027c-19.76 19.759-42.756 35.267-68.354 46.094-6.502 2.75-13.105 5.164-19.801 7.246V423c0-20.167-6.916-35-20.75-44.5 8.668-.833 16.625-2 23.875-3.5s14.918-3.667 23-6.5c8.084-2.833 15.334-6.208 21.75-10.125 6.418-3.917 12.584-9 18.5-15.25 5.918-6.25 10.875-13.333 14.875-21.25s7.168-17.417 9.5-28.5c2.334-11.083 3.5-23.292 3.5-36.625 0-25.833-8.416-47.833-25.25-66 7.668-20 6.834-41.75-2.5-65.25l-6.25-.75c-4.332-.5-12.125 1.333-23.375 5.5s-23.875 11-37.875 20.5c-19.832-5.5-40.416-8.25-61.749-8.25-21.5 0-42 2.75-61.5 8.25-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8-9.167-2.292-13.25-2.625-6.708-.417-7.875-.25-2 .333-2.5.5c-9.333 23.667-10.167 45.417-2.5 65.25-16.833 18.167-25.25 40.167-25.25 66 0 13.333 1.167 25.542 3.5 36.625s5.5 20.583 9.5 28.5 8.958 15 14.875 21.25 12.083 11.333 18.5 15.25 13.667 7.292 21.75 10.125 15.75 5 23 6.5 15.208 2.667 23.875 3.5c-13.667 9.333-20.5 24.167-20.5 44.5v39.115c-7.549-2.247-14.99-4.902-22.3-7.994-25.597-10.827-48.594-26.335-68.353-46.094-19.758-19.758-35.267-42.756-46.093-68.354C46.679 313.195 41 285.043 41 256s5.679-57.195 16.879-83.675c10.827-25.597 26.335-48.594 46.093-68.353 19.758-19.759 42.756-35.267 68.353-46.093C198.805 46.679 226.957 41 256 41s57.195 5.679 83.676 16.879c25.598 10.827 48.594 26.335 68.354 46.093 19.758 19.758 35.266 42.756 46.092 68.353C465.32 198.805 471 226.957 471 256s-5.68 57.195-16.879 83.675c-10.826 25.596-26.336 48.595-46.094 68.352z"/>
-        </svg>
-      </a>
+          <a target="_blank" href="https://github.com/bluelouie">
+            <svg class="social" data-aos="flip-right"  viewBox="0 0 512 512">
+              <path d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0zm152.027 408.027c-19.76 19.759-42.756 35.267-68.354 46.094-6.502 2.75-13.105 5.164-19.801 7.246V423c0-20.167-6.916-35-20.75-44.5 8.668-.833 16.625-2 23.875-3.5s14.918-3.667 23-6.5c8.084-2.833 15.334-6.208 21.75-10.125 6.418-3.917 12.584-9 18.5-15.25 5.918-6.25 10.875-13.333 14.875-21.25s7.168-17.417 9.5-28.5c2.334-11.083 3.5-23.292 3.5-36.625 0-25.833-8.416-47.833-25.25-66 7.668-20 6.834-41.75-2.5-65.25l-6.25-.75c-4.332-.5-12.125 1.333-23.375 5.5s-23.875 11-37.875 20.5c-19.832-5.5-40.416-8.25-61.749-8.25-21.5 0-42 2.75-61.5 8.25-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8-9.167-2.292-13.25-2.625-6.708-.417-7.875-.25-2 .333-2.5.5c-9.333 23.667-10.167 45.417-2.5 65.25-16.833 18.167-25.25 40.167-25.25 66 0 13.333 1.167 25.542 3.5 36.625s5.5 20.583 9.5 28.5 8.958 15 14.875 21.25 12.083 11.333 18.5 15.25 13.667 7.292 21.75 10.125 15.75 5 23 6.5 15.208 2.667 23.875 3.5c-13.667 9.333-20.5 24.167-20.5 44.5v39.115c-7.549-2.247-14.99-4.902-22.3-7.994-25.597-10.827-48.594-26.335-68.353-46.094-19.758-19.758-35.267-42.756-46.093-68.354C46.679 313.195 41 285.043 41 256s5.679-57.195 16.879-83.675c10.827-25.597 26.335-48.594 46.093-68.353 19.758-19.759 42.756-35.267 68.353-46.093C198.805 46.679 226.957 41 256 41s57.195 5.679 83.676 16.879c25.598 10.827 48.594 26.335 68.354 46.093 19.758 19.758 35.266 42.756 46.092 68.353C465.32 198.805 471 226.957 471 256s-5.68 57.195-16.879 83.675c-10.826 25.596-26.336 48.595-46.094 68.352z"
+              />
+            </svg>
+          </a>
 
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
+  </section>
+  <! --/footerwrap -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="./javascript/scripts.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="javascript/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
