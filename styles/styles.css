@@ -74,6 +74,9 @@ hr {
     .carousel-caption p {
       font-size: .8rem; } }
 
+.overflowhd {
+  overflow: hidden; }
+
 .past-projects__MD .row {
   padding: 5%; }
   .past-projects__MD .row:nth-of-type(2n) {
